@@ -1,0 +1,11 @@
+<<--les commandes pour lancer le service 
+1. accéder au directory 
+cd C:\Users\ASUS\iot-cloud-project
+2.activation de l'envirenement
+iot_env\Scripts\activate
+3.lancer le script python 
+python sensor_simulator.py --project clever-grammar-458517 --topic iot-data-v4 --sensors 5
+4.synchronizer le front avec le back
+gsutil -m rsync -r frontend gs://iot-dashboard-frontend
+5.accéder au lien de dashboard
+http://storage.googleapis.com/iot-dashboard-frontend/index.html

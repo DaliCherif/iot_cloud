@@ -1,0 +1,73 @@
+/* === Background & Layout === */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background: linear-gradient(135deg, #2c3e50, #4ca1af);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+/* === Table Styles === */
+table {
+  width: 100%;
+  max-width: 800px;
+  border-collapse: separate;
+  border-spacing: 0;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+  background: rgba(255,255,255,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px 16px;
+  text-align: center;
+}
+
+th {
+  background: rgba(255,255,255,0.2);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+tbody tr {
+  transition: background 0.3s;
+}
+tbody tr:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* === Status Styles === */
+td.status-ok {
+  color: #2ecc71; /* vert */
+  font-weight: bold;
+}
+td.status-anomaly {
+  color: #e74c3c; /* rouge vif */
+  font-weight: bold;
+}
+
+/* === Ligne anomalie === */
+tr.anomaly {
+  background: rgba(231, 76, 60, 0.2);
+}
+
+/* === Responsive === */
+@media (max-width: 600px) {
+  th, td {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+}

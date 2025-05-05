@@ -1,0 +1,352 @@
+[debug] [2025-05-03T17:48:46.980Z] ----------------------------------------------------------------------
+[debug] [2025-05-03T17:48:46.985Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ASUS\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting --project=clever-grammar-458517
+[debug] [2025-05-03T17:48:46.985Z] CLI Version:   14.2.2
+[debug] [2025-05-03T17:48:46.986Z] Platform:      win32
+[debug] [2025-05-03T17:48:46.986Z] Node Version:  v20.14.0
+[debug] [2025-05-03T17:48:46.986Z] Time:          Sat May 03 2025 19:48:46 GMT+0200 (heure d’été d’Europe centrale)
+[debug] [2025-05-03T17:48:46.986Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-05-03T17:48:47.259Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-03T17:48:47.259Z] > authorizing via signed-in user (mohamedali.cherif@itbs.tn)
+[debug] [2025-05-03T17:48:47.259Z] [iam] checking project clever-grammar-458517 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-05-03T17:48:47.261Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T17:48:47.261Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T17:48:47.262Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517:testIamPermissions [none]
+[debug] [2025-05-03T17:48:47.262Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517:testIamPermissions x-goog-quota-user=projects/clever-grammar-458517
+[debug] [2025-05-03T17:48:47.262Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-05-03T17:48:50.080Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517:testIamPermissions 200
+[debug] [2025-05-03T17:48:50.080Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-05-03T17:48:50.081Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T17:48:50.082Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T17:48:50.082Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clever-grammar-458517 [none]
+[debug] [2025-05-03T17:48:52.200Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clever-grammar-458517 404
+[debug] [2025-05-03T17:48:52.201Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clever-grammar-458517 {"error":{"code":404,"message":"Requested entity was not found.","status":"NOT_FOUND"}}
+[debug] [2025-05-03T17:48:52.205Z] Couldn't get project info from firedata for clever-grammar-458517, trying resource manager. Original error: FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/clever-grammar-458517 had HTTP Error: 404, Requested entity was not found.
+[debug] [2025-05-03T17:48:52.205Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T17:48:52.205Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T17:48:52.206Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517 [none]
+[debug] [2025-05-03T17:48:52.603Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517 200
+[debug] [2025-05-03T17:48:52.603Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517 {"projectNumber":"978603809687","projectId":"clever-grammar-458517","lifecycleState":"ACTIVE","name":"iot-sensor","createTime":"2025-05-01T17:25:59.438279Z"}
+[debug] [2025-05-03T17:48:52.604Z] the default site does not exist on the Firebase project; asking Hosting.
+[debug] [2025-05-03T17:48:52.604Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T17:48:52.604Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T17:48:52.604Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/clever-grammar-458517/sites pageToken=&pageSize=10
+[debug] [2025-05-03T17:48:54.353Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/clever-grammar-458517/sites 200
+[debug] [2025-05-03T17:48:54.354Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/clever-grammar-458517/sites {}
+[info] i  No Hosting site detected. 
+[debug] [2025-05-03T17:48:54.355Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T17:48:54.355Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T17:48:54.355Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517 [none]
+[debug] [2025-05-03T17:48:54.653Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517 200
+[debug] [2025-05-03T17:48:54.653Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517 {"projectNumber":"978603809687","projectId":"clever-grammar-458517","lifecycleState":"ACTIVE","name":"iot-sensor","createTime":"2025-05-01T17:25:59.438279Z"}
+[debug] [2025-05-03T17:48:54.653Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T17:48:54.654Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T17:48:54.654Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites siteId=clever-grammar-458517&validateOnly=true
+[debug] [2025-05-03T17:48:54.654Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites {"appId":""}
+[debug] [2025-05-03T17:48:55.473Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites 200
+[debug] [2025-05-03T17:48:55.473Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites {"name":"projects/978603809687/sites/clever-grammar-458517","defaultUrl":"https://clever-grammar-458517.web.app","type":"DEFAULT_SITE"}
+[debug] [2025-05-03T17:49:04.771Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T17:49:04.771Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T17:49:04.771Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites siteId=clever-grammar-458517
+[debug] [2025-05-03T17:49:04.771Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites {"appId":""}
+[debug] [2025-05-03T17:49:07.669Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites 404
+[debug] [2025-05-03T17:49:07.669Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites {"error":{"code":404,"message":"Requested entity was not found.","status":"NOT_FOUND"}}
+[warn] !  Request to https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites?siteId=clever-grammar-458517 had HTTP Error: 404, Requested entity was not found. 
+[debug] [2025-05-03T17:57:54.520Z] ----------------------------------------------------------------------
+[debug] [2025-05-03T17:57:54.523Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ASUS\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting --project clever-grammar-458517
+[debug] [2025-05-03T17:57:54.523Z] CLI Version:   14.2.2
+[debug] [2025-05-03T17:57:54.524Z] Platform:      win32
+[debug] [2025-05-03T17:57:54.524Z] Node Version:  v20.14.0
+[debug] [2025-05-03T17:57:54.524Z] Time:          Sat May 03 2025 19:57:54 GMT+0200 (heure d’été d’Europe centrale)
+[debug] [2025-05-03T17:57:54.524Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-05-03T17:57:54.769Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-03T17:57:54.769Z] > authorizing via signed-in user (mohamedali.cherif@itbs.tn)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\ASUS\iot-cloud-project
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-05-03T17:57:58.005Z] Using project from CLI flag: clever-grammar-458517
+[debug] [2025-05-03T17:57:58.007Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T17:57:58.008Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T17:57:58.012Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clever-grammar-458517 [none]
+[debug] [2025-05-03T17:58:03.834Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clever-grammar-458517 404
+[debug] [2025-05-03T17:58:03.834Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clever-grammar-458517 {"error":{"code":404,"message":"Requested entity was not found.","status":"NOT_FOUND"}}
+[debug] [2025-05-03T17:58:03.835Z] Couldn't get project info from firedata for clever-grammar-458517, trying resource manager. Original error: FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/clever-grammar-458517 had HTTP Error: 404, Requested entity was not found.
+[debug] [2025-05-03T17:58:03.835Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T17:58:03.835Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T17:58:03.835Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517 [none]
+[debug] [2025-05-03T17:58:10.277Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517 200
+[debug] [2025-05-03T17:58:10.278Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517 {"projectNumber":"978603809687","projectId":"clever-grammar-458517","lifecycleState":"ACTIVE","name":"iot-sensor","createTime":"2025-05-01T17:25:59.438279Z"}
+[info] i  Using project clever-grammar-458517 
+[info] 
+=== Hosting Setup
+[debug] [2025-05-03T17:58:10.318Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T17:58:10.318Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T17:58:10.319Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clever-grammar-458517 [none]
+[debug] [2025-05-03T17:58:11.812Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clever-grammar-458517 404
+[debug] [2025-05-03T17:58:11.812Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clever-grammar-458517 {"error":{"code":404,"message":"Requested entity was not found.","status":"NOT_FOUND"}}
+[debug] [2025-05-03T17:58:11.813Z] Couldn't get project info from firedata for clever-grammar-458517, trying resource manager. Original error: FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/clever-grammar-458517 had HTTP Error: 404, Requested entity was not found.
+[debug] [2025-05-03T17:58:11.814Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T17:58:11.816Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T17:58:11.816Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517 [none]
+[debug] [2025-05-03T17:58:12.125Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517 200
+[debug] [2025-05-03T17:58:12.125Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517 {"projectNumber":"978603809687","projectId":"clever-grammar-458517","lifecycleState":"ACTIVE","name":"iot-sensor","createTime":"2025-05-01T17:25:59.438279Z"}
+[debug] [2025-05-03T17:58:12.125Z] the default site does not exist on the Firebase project; asking Hosting.
+[debug] [2025-05-03T17:58:12.126Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T17:58:12.126Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T17:58:12.126Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/clever-grammar-458517/sites pageToken=&pageSize=10
+[debug] [2025-05-03T17:58:14.180Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/clever-grammar-458517/sites 200
+[debug] [2025-05-03T17:58:14.180Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/clever-grammar-458517/sites {}
+[debug] [2025-05-03T17:58:30.343Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T17:58:30.344Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T17:58:30.344Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517 [none]
+[debug] [2025-05-03T17:58:31.680Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517 200
+[debug] [2025-05-03T17:58:31.680Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517 {"projectNumber":"978603809687","projectId":"clever-grammar-458517","lifecycleState":"ACTIVE","name":"iot-sensor","createTime":"2025-05-01T17:25:59.438279Z"}
+[debug] [2025-05-03T17:58:31.681Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T17:58:31.681Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T17:58:31.681Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites siteId=clever-grammar-458517&validateOnly=true
+[debug] [2025-05-03T17:58:31.681Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites {"appId":""}
+[debug] [2025-05-03T17:58:33.737Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites 200
+[debug] [2025-05-03T17:58:33.737Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites {"name":"projects/978603809687/sites/clever-grammar-458517","defaultUrl":"https://clever-grammar-458517.web.app","type":"DEFAULT_SITE"}
+[debug] [2025-05-03T17:58:37.249Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T17:58:37.249Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T17:58:37.249Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites siteId=clever-grammar-458517
+[debug] [2025-05-03T17:58:37.249Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites {"appId":""}
+[debug] [2025-05-03T17:58:37.933Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites 404
+[debug] [2025-05-03T17:58:37.934Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites {"error":{"code":404,"message":"Requested entity was not found.","status":"NOT_FOUND"}}
+[warn] !  Request to https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites?siteId=clever-grammar-458517 had HTTP Error: 404, Requested entity was not found. 
+[debug] [2025-05-03T17:59:52.695Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T17:59:52.695Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T17:59:52.696Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites siteId=clever-gramar-458517-7e857
+[debug] [2025-05-03T17:59:52.696Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites {"appId":""}
+[debug] [2025-05-03T17:59:54.625Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites 404
+[debug] [2025-05-03T17:59:54.625Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites {"error":{"code":404,"message":"Requested entity was not found.","status":"NOT_FOUND"}}
+[warn] !  Request to https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites?siteId=clever-gramar-458517-7e857 had HTTP Error: 404, Requested entity was not found. 
+[debug] [2025-05-03T18:02:10.453Z] ----------------------------------------------------------------------
+[debug] [2025-05-03T18:02:10.457Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ASUS\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting --project=clever-grammar-458517
+[debug] [2025-05-03T18:02:10.457Z] CLI Version:   14.2.2
+[debug] [2025-05-03T18:02:10.458Z] Platform:      win32
+[debug] [2025-05-03T18:02:10.458Z] Node Version:  v20.14.0
+[debug] [2025-05-03T18:02:10.458Z] Time:          Sat May 03 2025 20:02:10 GMT+0200 (heure d’été d’Europe centrale)
+[debug] [2025-05-03T18:02:10.458Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-05-03T18:02:10.737Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-03T18:02:10.737Z] > authorizing via signed-in user (mohamedali.cherif@itbs.tn)
+[debug] [2025-05-03T18:02:10.738Z] [iam] checking project clever-grammar-458517 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-05-03T18:02:10.739Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:02:10.739Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:02:10.740Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517:testIamPermissions [none]
+[debug] [2025-05-03T18:02:10.741Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517:testIamPermissions x-goog-quota-user=projects/clever-grammar-458517
+[debug] [2025-05-03T18:02:10.741Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-05-03T18:02:11.968Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517:testIamPermissions 200
+[debug] [2025-05-03T18:02:11.969Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-05-03T18:02:11.970Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:02:11.971Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:02:11.971Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clever-grammar-458517 [none]
+[debug] [2025-05-03T18:02:12.753Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clever-grammar-458517 404
+[debug] [2025-05-03T18:02:12.753Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clever-grammar-458517 {"error":{"code":404,"message":"Requested entity was not found.","status":"NOT_FOUND"}}
+[debug] [2025-05-03T18:02:12.754Z] Couldn't get project info from firedata for clever-grammar-458517, trying resource manager. Original error: FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/clever-grammar-458517 had HTTP Error: 404, Requested entity was not found.
+[debug] [2025-05-03T18:02:12.754Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:02:12.755Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:02:12.755Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517 [none]
+[debug] [2025-05-03T18:02:12.973Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517 200
+[debug] [2025-05-03T18:02:12.973Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517 {"projectNumber":"978603809687","projectId":"clever-grammar-458517","lifecycleState":"ACTIVE","name":"iot-sensor","createTime":"2025-05-01T17:25:59.438279Z"}
+[debug] [2025-05-03T18:02:12.973Z] the default site does not exist on the Firebase project; asking Hosting.
+[debug] [2025-05-03T18:02:12.974Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:02:12.974Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:02:12.975Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/clever-grammar-458517/sites pageToken=&pageSize=10
+[debug] [2025-05-03T18:02:14.497Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/clever-grammar-458517/sites 200
+[debug] [2025-05-03T18:02:14.498Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/clever-grammar-458517/sites {}
+[info] i  No Hosting site detected. 
+[debug] [2025-05-03T18:02:14.501Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:02:14.501Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:02:14.501Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517 [none]
+[debug] [2025-05-03T18:02:14.715Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517 200
+[debug] [2025-05-03T18:02:14.716Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517 {"projectNumber":"978603809687","projectId":"clever-grammar-458517","lifecycleState":"ACTIVE","name":"iot-sensor","createTime":"2025-05-01T17:25:59.438279Z"}
+[debug] [2025-05-03T18:02:14.717Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:02:14.717Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:02:14.718Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites siteId=clever-grammar-458517&validateOnly=true
+[debug] [2025-05-03T18:02:14.718Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites {"appId":""}
+[debug] [2025-05-03T18:02:15.418Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites 200
+[debug] [2025-05-03T18:02:15.418Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites {"name":"projects/978603809687/sites/clever-grammar-458517","defaultUrl":"https://clever-grammar-458517.web.app","type":"DEFAULT_SITE"}
+[debug] [2025-05-03T18:02:15.443Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:02:15.443Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:02:15.443Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites siteId=clever-grammar-458517
+[debug] [2025-05-03T18:02:15.444Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites {"appId":""}
+[debug] [2025-05-03T18:02:16.235Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites 404
+[debug] [2025-05-03T18:02:16.236Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites {"error":{"code":404,"message":"Requested entity was not found.","status":"NOT_FOUND"}}
+[warn] !  Request to https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites?siteId=clever-grammar-458517 had HTTP Error: 404, Requested entity was not found. 
+[debug] [2025-05-03T18:02:52.644Z] ----------------------------------------------------------------------
+[debug] [2025-05-03T18:02:52.647Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ASUS\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting --project=clever-grammar-458517
+[debug] [2025-05-03T18:02:52.647Z] CLI Version:   14.2.2
+[debug] [2025-05-03T18:02:52.647Z] Platform:      win32
+[debug] [2025-05-03T18:02:52.647Z] Node Version:  v20.14.0
+[debug] [2025-05-03T18:02:52.647Z] Time:          Sat May 03 2025 20:02:52 GMT+0200 (heure d’été d’Europe centrale)
+[debug] [2025-05-03T18:02:52.648Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-05-03T18:02:52.888Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-03T18:02:52.888Z] > authorizing via signed-in user (mohamedali.cherif@itbs.tn)
+[debug] [2025-05-03T18:02:52.888Z] [iam] checking project clever-grammar-458517 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-05-03T18:02:52.890Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:02:52.890Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:02:52.891Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517:testIamPermissions [none]
+[debug] [2025-05-03T18:02:52.891Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517:testIamPermissions x-goog-quota-user=projects/clever-grammar-458517
+[debug] [2025-05-03T18:02:52.891Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-05-03T18:02:53.629Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517:testIamPermissions 200
+[debug] [2025-05-03T18:02:53.629Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-05-03T18:02:53.630Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:02:53.631Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:02:53.631Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clever-grammar-458517 [none]
+[debug] [2025-05-03T18:02:55.153Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clever-grammar-458517 404
+[debug] [2025-05-03T18:02:55.153Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clever-grammar-458517 {"error":{"code":404,"message":"Requested entity was not found.","status":"NOT_FOUND"}}
+[debug] [2025-05-03T18:02:55.154Z] Couldn't get project info from firedata for clever-grammar-458517, trying resource manager. Original error: FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/clever-grammar-458517 had HTTP Error: 404, Requested entity was not found.
+[debug] [2025-05-03T18:02:55.154Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:02:55.154Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:02:55.154Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517 [none]
+[debug] [2025-05-03T18:02:55.660Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517 200
+[debug] [2025-05-03T18:02:55.661Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517 {"projectNumber":"978603809687","projectId":"clever-grammar-458517","lifecycleState":"ACTIVE","name":"iot-sensor","createTime":"2025-05-01T17:25:59.438279Z"}
+[debug] [2025-05-03T18:02:55.661Z] the default site does not exist on the Firebase project; asking Hosting.
+[debug] [2025-05-03T18:02:55.662Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:02:55.662Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:02:55.663Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/clever-grammar-458517/sites pageToken=&pageSize=10
+[debug] [2025-05-03T18:02:57.820Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/clever-grammar-458517/sites 200
+[debug] [2025-05-03T18:02:57.821Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/clever-grammar-458517/sites {}
+[info] i  No Hosting site detected. 
+[debug] [2025-05-03T18:02:57.822Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:02:57.822Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:02:57.823Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517 [none]
+[debug] [2025-05-03T18:02:58.423Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517 200
+[debug] [2025-05-03T18:02:58.423Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517 {"projectNumber":"978603809687","projectId":"clever-grammar-458517","lifecycleState":"ACTIVE","name":"iot-sensor","createTime":"2025-05-01T17:25:59.438279Z"}
+[debug] [2025-05-03T18:02:58.424Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:02:58.424Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:02:58.424Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites siteId=clever-grammar-458517&validateOnly=true
+[debug] [2025-05-03T18:02:58.424Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites {"appId":""}
+[debug] [2025-05-03T18:02:59.148Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites 200
+[debug] [2025-05-03T18:02:59.148Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites {"name":"projects/978603809687/sites/clever-grammar-458517","defaultUrl":"https://clever-grammar-458517.web.app","type":"DEFAULT_SITE"}
+[debug] [2025-05-03T18:02:59.170Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:02:59.170Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:02:59.170Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites siteId=clever-grammar-458517
+[debug] [2025-05-03T18:02:59.170Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites {"appId":""}
+[debug] [2025-05-03T18:02:59.866Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites 404
+[debug] [2025-05-03T18:02:59.866Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites {"error":{"code":404,"message":"Requested entity was not found.","status":"NOT_FOUND"}}
+[warn] !  Request to https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites?siteId=clever-grammar-458517 had HTTP Error: 404, Requested entity was not found. 
+[debug] [2025-05-03T18:04:01.115Z] ----------------------------------------------------------------------
+[debug] [2025-05-03T18:04:01.118Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ASUS\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting:clever-grammar-458517-7e857 --project=clever-grammar-458517
+[debug] [2025-05-03T18:04:01.119Z] CLI Version:   14.2.2
+[debug] [2025-05-03T18:04:01.119Z] Platform:      win32
+[debug] [2025-05-03T18:04:01.119Z] Node Version:  v20.14.0
+[debug] [2025-05-03T18:04:01.119Z] Time:          Sat May 03 2025 20:04:01 GMT+0200 (heure d’été d’Europe centrale)
+[debug] [2025-05-03T18:04:01.119Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-05-03T18:04:01.422Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-03T18:04:01.423Z] > authorizing via signed-in user (mohamedali.cherif@itbs.tn)
+[debug] [2025-05-03T18:04:01.424Z] [iam] checking project clever-grammar-458517 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-05-03T18:04:01.425Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:04:01.425Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:04:01.427Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517:testIamPermissions [none]
+[debug] [2025-05-03T18:04:01.428Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517:testIamPermissions x-goog-quota-user=projects/clever-grammar-458517
+[debug] [2025-05-03T18:04:01.428Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-05-03T18:04:02.530Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517:testIamPermissions 200
+[debug] [2025-05-03T18:04:02.531Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-05-03T18:04:02.531Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:04:02.532Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:04:02.532Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clever-grammar-458517 [none]
+[debug] [2025-05-03T18:04:03.062Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clever-grammar-458517 404
+[debug] [2025-05-03T18:04:03.063Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clever-grammar-458517 {"error":{"code":404,"message":"Requested entity was not found.","status":"NOT_FOUND"}}
+[debug] [2025-05-03T18:04:03.063Z] Couldn't get project info from firedata for clever-grammar-458517, trying resource manager. Original error: FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/clever-grammar-458517 had HTTP Error: 404, Requested entity was not found.
+[debug] [2025-05-03T18:04:03.064Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:04:03.064Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:04:03.064Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517 [none]
+[debug] [2025-05-03T18:04:03.560Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517 200
+[debug] [2025-05-03T18:04:03.560Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517 {"projectNumber":"978603809687","projectId":"clever-grammar-458517","lifecycleState":"ACTIVE","name":"iot-sensor","createTime":"2025-05-01T17:25:59.438279Z"}
+[debug] [2025-05-03T18:04:03.560Z] the default site does not exist on the Firebase project; asking Hosting.
+[debug] [2025-05-03T18:04:03.561Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:04:03.561Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:04:03.562Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/clever-grammar-458517/sites pageToken=&pageSize=10
+[debug] [2025-05-03T18:04:04.983Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/clever-grammar-458517/sites 200
+[debug] [2025-05-03T18:04:04.983Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/clever-grammar-458517/sites {}
+[info] i  No Hosting site detected. 
+[debug] [2025-05-03T18:04:04.985Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:04:04.985Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:04:04.985Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517 [none]
+[debug] [2025-05-03T18:04:05.291Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517 200
+[debug] [2025-05-03T18:04:05.291Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517 {"projectNumber":"978603809687","projectId":"clever-grammar-458517","lifecycleState":"ACTIVE","name":"iot-sensor","createTime":"2025-05-01T17:25:59.438279Z"}
+[debug] [2025-05-03T18:04:05.292Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:04:05.292Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:04:05.293Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites siteId=clever-grammar-458517&validateOnly=true
+[debug] [2025-05-03T18:04:05.293Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites {"appId":""}
+[debug] [2025-05-03T18:04:06.008Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites 200
+[debug] [2025-05-03T18:04:06.008Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites {"name":"projects/978603809687/sites/clever-grammar-458517","defaultUrl":"https://clever-grammar-458517.web.app","type":"DEFAULT_SITE"}
+[debug] [2025-05-03T18:05:39.799Z] ----------------------------------------------------------------------
+[debug] [2025-05-03T18:05:39.803Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ASUS\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting --project=clever-grammar-458517
+[debug] [2025-05-03T18:05:39.803Z] CLI Version:   14.2.2
+[debug] [2025-05-03T18:05:39.803Z] Platform:      win32
+[debug] [2025-05-03T18:05:39.804Z] Node Version:  v20.14.0
+[debug] [2025-05-03T18:05:39.804Z] Time:          Sat May 03 2025 20:05:39 GMT+0200 (heure d’été d’Europe centrale)
+[debug] [2025-05-03T18:05:39.804Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-05-03T18:05:40.065Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-03T18:05:40.066Z] > authorizing via signed-in user (mohamedali.cherif@itbs.tn)
+[debug] [2025-05-03T18:05:40.066Z] [iam] checking project clever-grammar-458517 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-05-03T18:05:40.067Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:05:40.067Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:05:40.070Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517:testIamPermissions [none]
+[debug] [2025-05-03T18:05:40.070Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517:testIamPermissions x-goog-quota-user=projects/clever-grammar-458517
+[debug] [2025-05-03T18:05:40.070Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-05-03T18:05:41.053Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517:testIamPermissions 200
+[debug] [2025-05-03T18:05:41.054Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-05-03T18:05:41.054Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:05:41.055Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:05:41.055Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clever-grammar-458517 [none]
+[debug] [2025-05-03T18:05:41.653Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clever-grammar-458517 404
+[debug] [2025-05-03T18:05:41.653Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clever-grammar-458517 {"error":{"code":404,"message":"Requested entity was not found.","status":"NOT_FOUND"}}
+[debug] [2025-05-03T18:05:41.657Z] Couldn't get project info from firedata for clever-grammar-458517, trying resource manager. Original error: FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/clever-grammar-458517 had HTTP Error: 404, Requested entity was not found.
+[debug] [2025-05-03T18:05:41.657Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:05:41.658Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:05:41.658Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517 [none]
+[debug] [2025-05-03T18:05:41.960Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517 200
+[debug] [2025-05-03T18:05:41.960Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517 {"projectNumber":"978603809687","projectId":"clever-grammar-458517","lifecycleState":"ACTIVE","name":"iot-sensor","createTime":"2025-05-01T17:25:59.438279Z"}
+[debug] [2025-05-03T18:05:41.960Z] the default site does not exist on the Firebase project; asking Hosting.
+[debug] [2025-05-03T18:05:41.961Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:05:41.962Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:05:41.963Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/clever-grammar-458517/sites pageToken=&pageSize=10
+[debug] [2025-05-03T18:05:43.496Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/clever-grammar-458517/sites 200
+[debug] [2025-05-03T18:05:43.497Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/clever-grammar-458517/sites {}
+[info] i  No Hosting site detected. 
+[debug] [2025-05-03T18:05:43.500Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:05:43.500Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:05:43.501Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517 [none]
+[debug] [2025-05-03T18:05:43.703Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517 200
+[debug] [2025-05-03T18:05:43.703Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/clever-grammar-458517 {"projectNumber":"978603809687","projectId":"clever-grammar-458517","lifecycleState":"ACTIVE","name":"iot-sensor","createTime":"2025-05-01T17:25:59.438279Z"}
+[debug] [2025-05-03T18:05:43.705Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:05:43.705Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:05:43.706Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites siteId=clever-grammar-458517&validateOnly=true
+[debug] [2025-05-03T18:05:43.706Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites {"appId":""}
+[debug] [2025-05-03T18:05:44.518Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites 200
+[debug] [2025-05-03T18:05:44.518Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites {"name":"projects/978603809687/sites/clever-grammar-458517","defaultUrl":"https://clever-grammar-458517.web.app","type":"DEFAULT_SITE"}
+[debug] [2025-05-03T18:05:55.992Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:05:55.992Z] Checked if tokens are valid: true, expires at: 1746297330465
+[debug] [2025-05-03T18:05:55.992Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites siteId=clever-grammar-458517
+[debug] [2025-05-03T18:05:55.992Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites {"appId":""}
+[debug] [2025-05-03T18:05:59.467Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites 404
+[debug] [2025-05-03T18:05:59.467Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites {"error":{"code":404,"message":"Requested entity was not found.","status":"NOT_FOUND"}}
+[warn] !  Request to https://firebasehosting.googleapis.com/v1beta1/projects/978603809687/sites?siteId=clever-grammar-458517 had HTTP Error: 404, Requested entity was not found. 

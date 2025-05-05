@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard Capteurs IoT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Derniers Relevés Capteurs</h1>
+  <table id="capteurs">
+    <thead>
+      <tr>
+        <th>Capteur</th>
+        <th>Région</th>
+        <th>Température (°C)</th>
+        <th>Statut</th>
+        <th>Heure</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script>
+    const API = 'https://sensor-api-978603809687.europe-west1.run.app/latest-sensors';
+    const tbody = document.querySelector('#capteurs tbody');
+
+    async function loadData() {
+      try {
+        const res = await fetch(API + '?t=' + Date.now());
+        const data = await res.json();
+        tbody.innerHTML = ''; // vide table
+
+        data.forEach(d => {
+          const isAnomaly = d.anomalie; // true si temp > 70
+          const tr = document.createElement('tr');
+          if (isAnomaly) tr.classList.add('anomaly');
+
+          tr.innerHTML = `
+            <td>${d.capteur_id}</td>
+            <td>${d.region}</td>
+            <td>${d.temperature.toFixed(2)}</td>
+            <td class="${isAnomaly ? 'status-anomaly' : 'status-ok'}">
+              ${isAnomaly ? '⚠️ Anomalie' : '✓ OK'}
+            </td>
+            <td>${new Date(d.timestamp).toLocaleTimeString('fr-FR')}</td>
+          `;
+          tbody.appendChild(tr);
+        });
+      } catch (err) {
+        console.error('Erreur fetch:', err);
+      }
+    }
+
+    loadData();
+    setInterval(loadData, 5000);
+  </script>
+</body>
+</html>
